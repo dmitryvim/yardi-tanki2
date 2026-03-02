@@ -20,8 +20,27 @@
 # production
 /build
 
-# misc
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# IDE - VS Code / Cursor
+.vscode/
+.cursor/
+*.code-workspace
+
+# OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# misc
 *.pem
 
 # debug
@@ -33,8 +52,33 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Turbo
+.turbo/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
 # vercel
 .vercel
+
+# server compiled output
+server/dist/
 
 # typescript
 *.tsbuildinfo

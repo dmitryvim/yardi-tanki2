@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: "/g/tanki",
+  output: "standalone",
+  serverExternalPackages: ["ws"],
 };
 
 export default nextConfig;
