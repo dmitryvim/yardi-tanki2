@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/g/tanki",
+  basePath: "/g/tanki2",
   output: "standalone",
   serverExternalPackages: ["ws"],
 };

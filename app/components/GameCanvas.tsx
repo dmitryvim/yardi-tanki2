@@ -50,7 +50,7 @@ export default function GameCanvas() {
   // WebSocket connection
   useEffect(() => {
     const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-    const wsUrl = `${protocol}//${window.location.host}/g/tanki/ws`;
+    const wsUrl = `${protocol}//${window.location.host}/g/tanki2/ws`;
     let ws: WebSocket;
     let reconnectTimeout: ReturnType<typeof setTimeout>;
 

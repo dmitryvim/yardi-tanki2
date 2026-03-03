@@ -24,7 +24,7 @@ app.prepare().then(() => {
   server.on("upgrade", (req, socket, head) => {
     const { pathname } = parse(req.url!, true);
 
-    if (pathname === "/g/tanki/ws") {
+    if (pathname === "/g/tanki2/ws") {
       wsHandler.handleUpgrade(req, socket, head);
     }
     // Let Next.js handle /_next/webpack-hmr for HMR
@@ -39,8 +39,8 @@ app.prepare().then(() => {
 
   server.listen(port, hostname, () => {
     console.log(`> Ready on http://${hostname}:${port}`);
-    console.log(`> Game at http://${hostname}:${port}/g/tanki`);
-    console.log(`> WebSocket at ws://${hostname}:${port}/g/tanki/ws`);
+    console.log(`> Game at http://${hostname}:${port}/g/tanki2`);
+    console.log(`> WebSocket at ws://${hostname}:${port}/g/tanki2/ws`);
   });
 
   const shutdown = () => {
