@@ -1,3 +1,4 @@
+import "./standalone-config.js";
 import { createServer } from "node:http";
 import { parse } from "node:url";
 import next from "next";
@@ -17,8 +18,7 @@ app.prepare().then(() => {
   const wsHandler = new WsHandler(engine);
 
   const server = createServer((req, res) => {
-    const parsedUrl = parse(req.url!, true);
-    handle(req, res, parsedUrl);
+    handle(req, res);
   });
 
   server.on("upgrade", (req, socket, head) => {
